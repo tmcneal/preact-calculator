@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
 
-export default class Button extends React.Component {
+class Button extends React.Component {
   static propTypes = {
     name: PropTypes.string,
     orange: PropTypes.bool,
@@ -28,3 +28,7 @@ export default class Button extends React.Component {
     );
   }
 }
+
+Button.displayName = 'Button'
+
+export default Button

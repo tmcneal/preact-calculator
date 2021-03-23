@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./Display.css";
 
-export default class Display extends React.Component {
+class Display extends React.Component {
   static propTypes = {
     value: PropTypes.string,
   };
@@ -16,3 +16,7 @@ export default class Display extends React.Component {
     );
   }
 }
+
+Display.displayName = 'Display'
+
+export default Display

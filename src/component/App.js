@@ -4,7 +4,7 @@ import ButtonPanel from "./ButtonPanel";
 import calculate from "../logic/calculate";
 import "./App.css";
 
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     total: null,
     next: null,
@@ -24,3 +24,7 @@ export default class App extends React.Component {
     );
   }
 }
+
+App.displayName = 'PreactCalculator'
+
+export default App
